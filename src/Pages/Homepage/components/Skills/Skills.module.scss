@@ -1,0 +1,41 @@
+.skillsContainer {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  h2 {
+    color: var(--gold);
+  }
+  .skillsContent {
+    max-width: 1200px;
+    color: var(--dark);
+    padding: 20px;
+    .cardSkillContainer {
+      margin: 20px;
+      padding: 20px;
+      width: 220px;
+      height: 300px;
+      border: 1px solid var(--gold);
+      border-radius: var(--border-radius);
+      img {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .skillsLevel {
+        margin-top: 20px;
+        font-style: italic;
+      }
+    }
+    .largeCardSkillContainer {
+      margin: 20px;
+      padding: 20px;
+      width: 550px;
+      height: 200px;
+      border: 1px solid var(--gold);
+      border-radius: var(--border-radius);
+      img {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
