@@ -1,0 +1,27 @@
+.headerContainer {
+  background-color: var(--dark);
+
+  .headerContent {
+    height: 600px;
+    background-image: url("../../../public/photo-removebg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .nameAndJob {
+      background-color: var(--prussianBlue-transparent-04);
+      .firstAndLastName {
+        color: white;
+        font-size: 60px;
+        letter-spacing: 3px;
+      }
+      .jobTitle {
+        font-family: var(--second-font-familly);
+        color: var(--gold);
+        font-size: 30px;
+      }
+    }
+    .menu {
+      background-color: var(--prussianBlue-transparent-09);
+      margin-bottom: 30px;
+    }
+  }
+}

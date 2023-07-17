@@ -1,0 +1,25 @@
+.btn-menu {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: var(--gold);
+  }
+}
+
+.btn-menu-active {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: var(--gold-transparent);
+  color: var(--prussianBlue);
+  border-radius: var(--border-radius);
+}
+
+.menuSeparator {
+  border-right: 1px solid white;
+}
