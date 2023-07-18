@@ -13,7 +13,7 @@ function Portfolio() {
       } else {
         setImageIndex(0);
       }
-    }, 5000);
+    }, 3000);
   });
 
   function nextItem() {
