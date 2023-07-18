@@ -8,11 +8,9 @@ function Homepage() {
     <div
       className={`${styles.homepageContainer} d-flex flex-column flex-fill align-items-center justify-content-center`}
     >
-      <div className={`${styles.homepageContent}`}>
-        <AboutME />
-        <TimelineCV />
-        <Skills />
-      </div>
+      <AboutME />
+      <TimelineCV />
+      <Skills />
     </div>
   );
 }

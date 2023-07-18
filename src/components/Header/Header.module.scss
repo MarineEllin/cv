@@ -1,3 +1,5 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .headerContainer {
   background-color: var(--dark);
 
@@ -12,11 +14,17 @@
         color: white;
         font-size: 60px;
         letter-spacing: 3px;
+        @include mixin.xs {
+          font-size: 48px;
+        }
       }
       .jobTitle {
         font-family: var(--second-font-familly);
         color: var(--gold);
         font-size: 30px;
+        @include mixin.xs {
+          font-size: 24px;
+        }
       }
     }
     .menu {

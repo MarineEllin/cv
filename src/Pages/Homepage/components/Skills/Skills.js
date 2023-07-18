@@ -3,10 +3,10 @@ import styles from "./Skills.module.scss";
 const Skills = () => {
   return (
     <div
-      className={`${styles.skillsContainer} d-flex flex-column align-items-center`}
+      className={`${styles.skillsContainer} d-flex flex-column align-items-center justify-content-center`}
     >
       <h2 className="mb-20">IT Skills</h2>
-      <div className={`${styles.skillsContent} d-flex flex-row`}>
+      <div className={styles.skillsContentIT}>
         <div className={`${styles.cardSkillContainer} d-flex flex-column`}>
           <div>
             <img src="html.png" alt="html" />
@@ -54,36 +54,30 @@ const Skills = () => {
         </div>
       </div>
       <h2 className="mb-20">Autres Skills</h2>
-      <div className={`${styles.skillsContent}`}>
-        <div className="dflex space-between">
-          <div className="d-flex flex-row space-between">
-            <div
-              className={`${styles.largeCardSkillContainer} d-flex flex-row space-between align-items-center`}
-            >
-              <div>
-                <img src="France.png" alt="html" />
-                <p>Langue maternelle</p>
-              </div>
-              <div>
-                <img src="United Kingdom.png" alt="html" />
-                <p>B2</p>
-              </div>
-              <div>
-                <img src="Germany.png" alt="html" />
-                <p>B1</p>
-              </div>
-            </div>
-            <div
-              className={`${styles.largeCardSkillContainer} d-flex flex-colum align-items-center justify-content-center`}
-            >
-              <ul>
-                <li>
-                  Formée à la Business Analyse (formation reconnue par l'IIBA)
-                </li>
-                <li>Formée à la gestion de projets</li>
-              </ul>
-            </div>
+      <div className={styles.skillsContentOth}>
+        <div className={`${styles.largeCardSkillContainer} space-between`}>
+          <div>
+            <img src="France.png" alt="html" />
+            <p>Langue maternelle</p>
           </div>
+          <div>
+            <img src="United Kingdom.png" alt="html" />
+            <p>B2</p>
+          </div>
+          <div>
+            <img src="Germany.png" alt="html" />
+            <p>B1</p>
+          </div>
+        </div>
+        <div
+          className={`${styles.largeCardSkillContainer} justify-content-center`}
+        >
+          <ul>
+            <li>
+              Formée à la Business Analyse (formation reconnue par l'IIBA)
+            </li>
+            <li>Formée à la gestion de projets</li>
+          </ul>
         </div>
       </div>
     </div>

@@ -1,10 +1,10 @@
 .aboutContainer {
-  padding: 20px;
+  width: 100vw;
+  padding: 20px 50px;
   background-color: var(--gold);
   .aboutContent {
     color: var(--dark);
     .aboutIntroduction {
-      max-width: 1200px;
       text-align: left;
       line-height: 30px;
     }

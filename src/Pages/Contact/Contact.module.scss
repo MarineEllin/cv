@@ -1,0 +1,18 @@
+.contactContainer {
+  background-color: var(--grey-light);
+  padding: 20px;
+  color: var(--prussianBlue);
+  .contactContent {
+    padding: 20px;
+    h2 {
+      color: var(--gold);
+    }
+    a {
+      color: var(--prussianBlue);
+
+      &:hover {
+        color: var(--prussianBlue-transparent-04);
+      }
+    }
+  }
+}

@@ -1,26 +1,19 @@
 .timelineContainer {
-  width: 100vw;
   background-color: var(--grey-light);
-}
-
-.element {
-  box-shadow: none !important;
-}
-
-.trainingDetails {
-  text-align: left;
-
-  .details {
-    summary {
-      color: var(--skyBlue);
-    }
-    margin-top: 20px;
-    ul {
-      padding-left: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      li {
-        padding-top: 10px;
+  .trainingDetails {
+    text-align: left;
+    .details {
+      summary {
+        color: var(--skyBlue);
+      }
+      margin-top: 20px;
+      ul {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        li {
+          padding-top: 10px;
+        }
       }
     }
   }

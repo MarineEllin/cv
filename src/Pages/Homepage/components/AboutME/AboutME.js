@@ -2,7 +2,9 @@ import styles from "./AboutME.module.scss";
 
 const AboutME = () => {
   return (
-    <div className={styles.aboutContainer}>
+    <div
+      className={`${styles.aboutContainer} d-flex justify-content-center align-items-center`}
+    >
       <div
         className={`${styles.aboutContent} d-flex flex-column align-items-center`}
       >

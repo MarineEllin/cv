@@ -1,3 +1,5 @@
+@use "../../../../../assets/styles/mixins" as mixin;
+
 .iconContainer {
   display: flex;
   flex-direction: row;
@@ -7,5 +9,8 @@
   height: 100%;
   .icon {
     font-size: 30px;
+    @include mixin.xs-medium {
+      font-size: 20px;
+    }
   }
 }
