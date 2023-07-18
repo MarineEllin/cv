@@ -15,7 +15,7 @@ function Header() {
             Développeuse React & Java
           </div>
         </div>
-        <div className={`${styles.menu} mb-10`}>
+        <navbar className={`${styles.menu} mb-10`}>
           <ul className="d-flex flex-row justify-content-center align-items-center">
             <NavLink
               className={({ isActive }) =>
@@ -48,7 +48,7 @@ function Header() {
               CONTACT
             </NavLink>
           </ul>
-        </div>
+        </navbar>
       </div>
     </header>
   );
