@@ -162,6 +162,7 @@ const TimelineCV = () => {
                 Introduction aux flux : Reader/Writer, FileReader/FileWriter.
               </li>
               <li>Serialisation.</li>
+              <li>Spring & Maven : création d'API REST</li>
             </ul>
           </details>
         </div>

@@ -47,6 +47,17 @@ function Header() {
             >
               CONTACT
             </NavLink>
+            <li>
+              <span className="menuSeparator"></span>
+            </li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "btn-menu-active" : "btn-menu"
+              }
+              to="/blog"
+            >
+              BLOG
+            </NavLink>
           </ul>
         </navbar>
       </div>

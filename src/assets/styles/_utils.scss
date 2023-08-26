@@ -19,12 +19,27 @@
 .mb-20 {
   margin-bottom: 20px;
 }
-
+.mr-5 {
+  margin-right: 5px;
+}
 .mr-10 {
   margin-right: 10px;
 }
 .mr-20 {
   margin-right: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+.ml-60 {
+  margin-left: 60px;
 }
 
 .mt-10 {
@@ -35,8 +50,18 @@
   margin-top: 20px;
 }
 
-.mt-15 {
+.mt-10 {
+  margin-top: 10px;
+}
+
+.my-10 {
+  margin-top: 10px;
+}
+.my-15 {
   margin-top: 15px;
+}
+.my-20 {
+  margin: 20px 0 20px 0;
 }
 
 .font-color-gold {
@@ -45,4 +70,15 @@
 
 .font-color-transparent-04 {
   color: var(--gold-transparent-04);
+}
+
+.font-color-prussianBlue {
+  color: var(--prussianBlue);
+}
+
+.text-align-left {
+  text-align: left;
+}
+.text-align-center {
+  text-align: center;
 }

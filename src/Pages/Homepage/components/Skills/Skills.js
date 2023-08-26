@@ -10,8 +10,8 @@ const Skills = () => {
         <div className={`${styles.cardSkillContainer} d-flex flex-column`}>
           <div>
             <img src="html.png" alt="html" />
-            <img src="css.png" alt="html" />
-            <img src="sass.png" alt="html" />
+            <img src="css.png" alt="css" />
+            <img src="sass.png" alt="sass" />
           </div>
           <div>
             <p>HTML</p>
@@ -22,21 +22,28 @@ const Skills = () => {
         </div>
         <div className={`${styles.cardSkillContainer} d-flex flex-column`}>
           <div>
-            <img src="js.png" alt="html" />
-            <img src="typescript.png" alt="html" />
+            <img src="js.png" alt="js" />
+            <img src="typescript.png" alt="ts" />
+            <br />
+            <img src="react.png" alt="react" />
           </div>
           <div>
             <p>JavaScript</p>
             <p>TypeScript</p>
+            <p>React / React-Native</p>
           </div>
           <p className={styles.skillsLevel}>(bonne maîtrise)</p>
         </div>
         <div className={`${styles.cardSkillContainer} d-flex flex-column`}>
           <div>
-            <img src="git.png" alt="html" />
+            <img src="git.png" alt="git" />
+            <img src="vscode.png" alt="vscode" />
+            <img src="intellij.png" alt="intellij" />
           </div>
           <div>
             <p>Git</p>
+            <p>VSCode</p>
+            <p>IntelliJ</p>
           </div>
 
           <p className={styles.skillsLevel}>
@@ -49,8 +56,10 @@ const Skills = () => {
           </div>
           <div>
             <p>Java</p>
+            <p>Spring</p>
+            <p>Maven</p>
           </div>
-          <p className={styles.skillsLevel}>(en cours de développement)</p>
+          <p className={styles.skillsLevel}>(connaissances de base)</p>
         </div>
       </div>
       <h2 className="mb-20">Autres Skills</h2>

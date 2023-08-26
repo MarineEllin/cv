@@ -1,4 +1,5 @@
 import App from "App";
+import Blog from "Pages/Blog/Blog";
 import Contact from "Pages/Contact/Contact";
 import Homepage from "Pages/Homepage/Homepage";
 import Portfolio from "Pages/Portfolio/Portfolio";
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
     ],
   },
