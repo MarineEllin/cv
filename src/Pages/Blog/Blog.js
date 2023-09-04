@@ -441,7 +441,7 @@ export default function Blog() {
                   id)&#123;
                 </span>
                 <span className="ml-40">
-                  Optional&lg;User&lt; myUser = userService.getUser(id);
+                  Optional&lt;User&gt; myUser = userService.getUser(id);
                 </span>
                 <span className="ml-40">if(myUser.isPresent()) &#123;</span>
                 <span className="ml-60">return myUser;</span>
