@@ -1,0 +1,141 @@
+
+.logoContainer {
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logoContent {
+      position: absolute;
+      .TL{
+        z-index: 2;
+        top: 25px;
+        right: 13px;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        transition: all 0.5s;
+        background-color: white;
+        img{
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .TR{
+        z-index: 2;
+        top: 0;
+        right: -12px;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        transition: all 0.5s;
+        background-color: white;
+        img{
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .BL{
+        z-index: 2;
+        top: 0;
+        right: 13px;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        transition: all 0.5s;
+        background-color: white;
+        img{
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .BR{
+        z-index: 2;
+        top: -25px;
+        right: -12px;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        transition: all 0.5s;
+        background-color: white;
+        img{
+          width: 25px;
+          height: 25px;
+        }
+      }
+      &:hover .TL {
+        transform: translate(-75px, -18px) scale(1.5);
+        box-shadow: var(--box-shadow);
+      }
+      &:hover .TR {
+        transform: translate(70px, -18px) scale(1.5);
+        box-shadow: var(--box-shadow);
+      }
+      &:hover .BR {
+        transform: translate(70px, 18px) scale(1.5);
+        box-shadow: var(--box-shadow);
+      }
+      &:hover .BL {
+        transform: translate(-75px, 18px) scale(1.5);
+        box-shadow: var(--box-shadow);
+      }
+      .link{
+          z-index: 1;
+          opacity: 0;
+          position: absolute;
+          top: 24px;
+          right: -75px;
+          background-color: white;
+          padding: 15px 40px;
+          margin: 0;
+          box-shadow: var(--inner-box-shadow);
+              a {
+              background-color: var(--prussianBlue);
+              color: white;
+              padding: 2px 5px;
+              border-radius: 10px;
+              margin: 0;
+              font-size: 14px;
+            }
+            img{
+              opacity: 0;
+              margin: 0;
+              margin-right: 5px;
+              width: 14px;
+              height: 14px;
+            }      
+          }
+          &:hover .link{
+            animation: linkAnimation;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+          }
+          &:hover .link a img {
+              animation: aImgAnimation;
+              animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+          }
+      }
+  }
+@keyframes linkAnimation {
+0%{
+opacity: 0;
+scale: 0.5;
+}
+100%{
+opacity: 1;
+scale:1;
+}
+}
+@keyframes aImgAnimation {
+    0%{
+    opacity: 0.05;
+    }
+    99%{
+        opacity: 0.05;
+        }
+    100%{
+    opacity: 1;
+    }
+    }

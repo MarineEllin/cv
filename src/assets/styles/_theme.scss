@@ -1,25 +1,54 @@
-.btn-menu {
+@use "../../assets/styles/mixins" as mixin;
+
+.btn-menu, .btn-menu-active {
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  width: 120px;
+  position: relative;
   margin: 10px;
   padding: 10px;
   text-decoration: none;
   transition-duration: 0.5s;
+  font-weight: 500;
+  margin: 0 20px;
+  @include mixin.xs {
+    width: 80px;
+    font-size: 13px;
+    margin: 0 5px;
+  }
+  &:after, &:before{
+    content:" ";
+    width:10px;
+    height:10px;
+    position:absolute;
+    transition:all 1s;
+    }
+  &:after{
+    top:-1px;
+    left:-1px;
+    border-top:5px solid var(--gold);
+    border-left:5px solid var(--gold);
+  }
+  &:before{
+    bottom:-1px;
+    right:-1px;
+    border-bottom:5px solid var(--gold);
+    border-right:5px solid var(--gold);
+  }
+  &:hover{
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
 
-  &:hover {
-    color: var(--gold);
+    &:before,&:after{
+      width:100%;
+      height:100%;
+    }
   }
 }
 
 .btn-menu-active {
-  color: white;
-  margin: 10px;
-  padding: 10px;
-  text-decoration: none;
-  background-color: var(--gold-transparent);
-  color: var(--prussianBlue);
-  border-radius: var(--border-radius);
+  background-color:  rgb(217, 179, 16, 0.4);
 }
 
-.menuSeparator {
-  border-right: 1px solid white;
-}

@@ -8,6 +8,7 @@
     background-image: url("../../../public/photo-removebg.png");
     background-repeat: no-repeat;
     background-position: bottom;
+    
     .nameAndJob {
       background-color: var(--prussianBlue-transparent-04);
       .firstAndLastName {
@@ -29,7 +30,10 @@
     }
     .menu {
       background-color: var(--prussianBlue-transparent-09);
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

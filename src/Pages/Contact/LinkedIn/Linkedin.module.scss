@@ -1,0 +1,108 @@
+
+.logoContainer {
+  cursor: pointer;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .logoContent {
+      position: absolute;
+      .UP{
+      z-index: 2;
+      top: 0;
+      right: 0px;
+      position: relative;
+      width: 220px;
+      height: 28px;
+      transition: all 0.5s;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background-color: white;
+      img{
+        width: 50px;
+        height: 25px;
+     }
+    }
+    .BO{
+        z-index: 2;
+        top: 0;
+        right: 0px;
+        position: relative;
+        width: 220px;
+        height: 28px;
+        transition: all 0.5s;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: white;
+      img{
+        width: 50px;
+        height: 25px;
+      }
+    }
+
+    &:hover .UP {
+      transform: translateY(-20px);
+      background-color: white;
+      box-shadow: var(--box-shadow);
+
+    }
+    &:hover .BO {
+      transform: translateY(20px);
+      background-color: white;
+      box-shadow: var(--box-shadow);
+    }
+
+    .link{
+    width: 200px;
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left:12px;
+    background-color: white;
+    padding: 15px 40px;
+    margin: 0;
+    box-shadow: var(--inner-box-shadow);
+        a {
+        background-color: var(--prussianBlue);
+        color: white;
+        padding: 2px 5px;
+        border-radius: 10px;
+        margin: 0;
+        font-size: 14px;
+            i{
+            opacity: 0;
+            margin: 0;
+            margin-right: 5px;
+            width: 14px;
+            height: 14px;
+            color: var(--gold);
+            }  
+        }
+         
+    }
+    &:hover .link{
+      opacity: 1;
+    }
+    &:hover .link a i {
+        animation: aImgAnimation;
+        animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+    }
+    
+  }
+
+@keyframes aImgAnimation {
+    0%{
+    opacity: 0.05;
+    }
+    99%{
+        opacity: 0.05;
+        }
+    100%{
+    opacity: 1;
+    }
+    }
