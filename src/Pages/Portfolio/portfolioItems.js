@@ -1,5 +1,21 @@
 const items = [
   {
+    title: "My movie app - Next.js",
+    description:
+      "Application web de films - Développée en Next.js, base de données Vercel Postgres, ORM Prisma - Déployée avec Vercel",
+    images: ["movie1.jpg", "movie2.jpg", "movie3.jpg"],
+    code: "https://github.com/MarineEllin/my-movie-app",
+    website: "https://my-movie-crbd3kvnu-marineellins-projects.vercel.app/fr",
+  },
+  {
+    title: "Marvel Characters - Vue.js",
+    description:
+      "Application personnages Marvel - Développée en Vue.js - Déployée avec Netlify",
+    images: ["marvel1.jpg", "marvel2.jpg", "marvel3.jpg"],
+    code: "https://github.com/MarineEllin/marvel-characters",
+    website: "https://marvel-characters-me.netlify.app/",
+  },
+  {
     title: "Quiz-en-Flag - React Native",
     description:
       "Application mobile de jeu de drapeaux - Développée en React Native - Publiée sur google store",
